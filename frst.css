@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00adb5;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.services {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.our-services h2 {
+    margin-bottom: 20px;
+}
+
+
+.slider-buttons {
+    margin-bottom: 15px;
+}
+
+.slider-buttons button {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card {
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+    transition: 0.3s;
+    height: 300px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #00adb5;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.container img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.socials i {
+    margin: 10px;
+    cursor: pointer;
+}
